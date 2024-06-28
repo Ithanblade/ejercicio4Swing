@@ -28,7 +28,9 @@ public class form1 {
 
                 if ((nombre.equals(credencial1) ) && (contra.equals(credencial2))){
 
+
                     JFrame frame = new JFrame("bienvenido");
+                    frame.dispose();
                     frame.setContentPane(new form2().menu2);
                     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                     frame.setSize(800, 600);
@@ -36,7 +38,7 @@ public class form1 {
                     frame.setMinimumSize(new Dimension(800, 600));
                     frame.pack();
                     frame.setVisible(true);
-                    frame.dispose();
+
 
 
                 }else {
