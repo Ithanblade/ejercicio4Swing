@@ -36,6 +36,8 @@ public class form1 {
                     frame.setMinimumSize(new Dimension(800, 600));
                     frame.pack();
                     frame.setVisible(true);
+                    frame.dispose();
+
 
                 }else {
 
