@@ -26,11 +26,18 @@ public class form1 {
                 String credencial1="java";
                 String credencial2="java";
 
+                JFrame frame = new JFrame("bienvenido");
+
+                if (frame.isVisible()){
+                    frame.dispose();
+                }
+
+
                 if ((nombre.equals(credencial1) ) && (contra.equals(credencial2))){
 
 
-                    JFrame frame = new JFrame("bienvenido");
-                    frame.dispose();
+
+
                     frame.setContentPane(new form2().menu2);
                     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                     frame.setSize(800, 600);
@@ -41,11 +48,14 @@ public class form1 {
 
 
 
+
+
                 }else {
 
                     mensaje.setText("Las credenciales no son correctas");
 
                 }
+
 
 
 
